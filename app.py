@@ -5,7 +5,9 @@ def subtrair(a, b):
     return a - b
 
 def multiplicar(a, b):
-    pass
+    return a * b
 
 def dividir(a, b):
-    pass
+    if b == 0:
+        return "Erro: divisao por zero"
+    return a / b
