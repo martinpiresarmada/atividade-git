@@ -1,8 +1,8 @@
 def somar(a, b):
-    pass
+    return a + b
 
 def subtrair(a, b):
-    pass
+    return a - b
 
 def multiplicar(a, b):
     pass
