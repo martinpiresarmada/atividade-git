@@ -20,8 +20,13 @@ def menu():
     print("4. Dividir")
 
     opcao = input("Escolha uma opcao: ")
-    a = float(input("Primeiro numero: "))
-    b = float(input("Segundo numero: "))
+
+    try:
+        a = float(input("Primeiro numero: "))
+        b = float(input("Segundo numero: "))
+    except ValueError:
+        print("Erro: digite apenas numeros")
+        return
 
     if opcao == "1":
         print(somar(a, b))
@@ -31,5 +36,7 @@ def menu():
         print(multiplicar(a, b))
     elif opcao == "4":
         print(dividir(a, b))
+    else:
+        print("Opcao invalida")
 
 menu()
